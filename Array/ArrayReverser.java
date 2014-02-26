@@ -1,5 +1,5 @@
 /*
-Reverse an array of ints
+Reverses an array of ints
 */
 
 public class ArrayReverser
