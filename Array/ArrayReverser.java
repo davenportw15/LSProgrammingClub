@@ -1,5 +1,5 @@
 /*
-Reverses an array of ints
+Reverses an array of ints.
 */
 
 public class ArrayReverser
@@ -9,12 +9,12 @@ public class ArrayReverser
 		java.util.Scanner gets = new java.util.Scanner(System.in);
 		System.out.println("Enter a set of numbers with each number separated by a space.");
 		
-		//Get input and split into an array of Strings, splitInput
+		//Get input and split into an array of Strings, splitInput.
 		String input = gets.nextLine();
 		String[] splitInput = input.split(" ");
 		int[] integers = new int[splitInput.length];
 		
-		//Copy int values of splitInput into integers
+		//Copy int values of splitInput into integers.
 		for (int i = 0; i < splitInput.length; i++)
 		{
 			try
@@ -41,6 +41,7 @@ public class ArrayReverser
 		
 		for (int i = 0; i < original.length; i++)
 		{
+			//(original.length - 1) must be used because arrays are 0-indexed, but <Array>.length is not.
 			reversed[i] = original[(original.length - 1) - i];
 		}
 
